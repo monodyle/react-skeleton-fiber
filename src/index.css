@@ -1,0 +1,40 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  background-color: #fafafa;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.example {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 0.5fr 0.5fr;
+  gap: 8px 16px;
+  grid-template-areas:
+    "avatar name"
+    "avatar title";
+}
+.avatar {
+  grid-area: avatar;
+}
+.name {
+  grid-area: name;
+}
+.title {
+  grid-area: title;
+}
